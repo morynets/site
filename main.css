@@ -1,0 +1,56 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --purple: #800080;
+    --red: #ff0000;
+    --yellow: #ffff00;
+
+  }
+  * {
+    color: var(--fontColor);
+    font-family: helvetica;
+  }
+  body {
+      background: var(--bg);
+  }
+
+ul {
+    font-family: helvetica;
+}
+li {
+    list-style: circle;
+  }
+  
+  .list {
+    list-style: square;
+  }
+  
+  #msg {
+    font-family: monospace;
+    font-size: 70px;
+  }
+
+  .light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--yellow);
+  --btnFontColor: var(--purple);
+  }
+  .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--red);
+  --btnFontColor: var(--black);
+  }
+  .btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
+  .btn:focus { outline-style: none; }
